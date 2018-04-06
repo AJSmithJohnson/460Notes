@@ -100,6 +100,8 @@ game = {
 
         this.player.update();
         this.player.draw();
+        
+        console.log("x " + window.screenX + "y " + window.screenY);
 
         var me = this;
         requestAnimationFrame(function(time) {me.gameLoop(time);});
